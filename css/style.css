@@ -40,7 +40,7 @@ h1 {
 
 .container {
   padding: 15px;
-  color: #999;
+  color: #000000;
   font-size: 0.9rem;
   background-color: #f9f9f9;
 }
@@ -88,11 +88,86 @@ h2 {
 
 .info-item {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 10px;
   font-size: 0.9rem;
 }
 
 .info-label {
   font-weight: 600;
+}
+
+/*SOCIAL BUTTON*/
+
+.social-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.social-button i {
+  color: #333333;
+  font-size: 24px;
+}
+
+.social-text {
+  display: none;
+}
+
+/*BANNER*/
+
+.cooking-classes-banner {
+  display: none;
+  margin: 20px 0;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.cooking-classes-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*SECTION*/
+
+.section-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 30px 0 20px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #f2a93b;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.recipe-text {
+  line-height: 1.8;
+  font-size: 0.95rem;
 }

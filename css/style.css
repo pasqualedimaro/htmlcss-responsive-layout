@@ -101,7 +101,7 @@ h2 {
 .social-container {
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
 }
 

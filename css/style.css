@@ -62,6 +62,16 @@ h2 {
   background-color: #000;
 }
 
+.video-banner {
+  position: relative;
+  width: 100%;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -161,6 +171,16 @@ h2 {
   background-color: #f2a93b;
 }
 
+.recipe-description {
+  margin-bottom: 30px;
+}
+
+.recipe-description:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .recipe-image {
   width: 100%;
   height: auto;
@@ -184,6 +204,12 @@ footer {
   text-align: center;
 }
 
+.footer-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .footer-address {
   margin-bottom: 15px;
 }
@@ -199,4 +225,142 @@ footer {
   color: white;
   text-decoration: underline;
   margin: 5px 0;
+}
+
+/* Tablet styles (above 768px) */
+@media (min-width: 768px) {
+  header {
+    text-align: left;
+  }
+
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .recipe-title-addon {
+    display: inline;
+  }
+
+  .info-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .info-item {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+  }
+
+  .social-button {
+    width: 120px;
+    border-radius: 25px;
+  }
+
+  .banner-ad {
+    display: block;
+    text-align: center;
+    clear: both;
+  }
+
+  .banner-ad img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cooking-classes-banner {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    clear: both;
+  }
+
+  .cooking-classes-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .recipe-image {
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop styles (above 992px) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .recipe-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .recipe-video {
+    float: left;
+    width: 60%;
+  }
+
+  .recipe-info {
+    float: right;
+    width: 35%;
+  }
+
+  .info-grid {
+    display: block;
+  }
+
+  .info-item {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .social-button {
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    padding: 12px 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-text {
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  footer {
+    padding: 20px 50px;
+  }
+
+  .footer-address {
+    float: left;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .footer-links {
+    float: right;
+    flex-direction: row;
+  }
+
+  .footer-links a {
+    float: left;
+    margin: 0 10px;
+  }
 }
